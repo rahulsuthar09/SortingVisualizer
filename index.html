@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rahul Suthar" />
+    <meta name="copyright" content="ENC branch - 2019" />
+    <meta name="description" content="Sorting Visualiser - Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort "/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualiser</title>
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="assets/style.css">
+    <link
+      rel="icon"
+      href="assets/icon.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+</head>
+<body>
+    <nav class="flex flex-column">
+        <h2>Sorting Visualiser</h2>
+        <div class="wrapper flex flex-column">
+            <div class="data-container flex">
+                <select name="select algo" id="algo-menu" class="menu">
+                    <option value="0">Select Algorithm</option>
+                    <option value="1">Bubble Sort</option>
+                    <option value="2">Selection Sort</option>
+                    <option value="3">Merge Sort</option>
+                    <option value="4">Quick Sort</option>
+                    <option value="5">Insertion Sort</option>
+                </select>
+                <select name="select size" id="size-menu" class="menu">
+                    <option value="0">Size</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="150">150</option>
+                </select>
+                <select name="speed of visualization" id="speed-menu" class="menu">
+                    <option value="0">Speed</option>
+                    <option value="0.5">0.5x</option>
+                    <option value="1">1x</option>
+                    <option value="2">2x</option>
+                    <option value="4">4x</option>
+                    <option value="6">6x</option>
+                    <option value="10">10x</option>
+                </select>
+            </div>
+            <div class="btn-container flex">
+                <button id="newarray-btn" class="btn">New Array</button>
+                <button id="start-btn" class="btn">Start</button>
+            </div>
+        </div>
+    </nav>
+    <!-- section - frame  -->
+    <div class="center">
+        <div class="frame">
+            <!-- graph bar -->
+        </div>
+    </div>
+    <!-- Sorting details -->
+    <section class="section">
+        <div class="collected-data">
+            <p>Algorithm Used : <span id="algo">NA</span></p>
+            <p>Size : <span id="size">NA</span></p>
+            <p>Speed : <span id="speed">NA</span></p>
+            <p>No of comparision : <span id="comparision">NA</span></p>
+            <p>Time Taken : <span id="time-taken">NA</span></p>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="about">
+            <h3>Created By Rahul Suthar</h3>
+            <h3>+91 8569999744</h3>
+            <h3>rahulsuthar1911@gmail.com</h3>
+        </div>
+    </footer>
+     
+    <!-- javascript files -->
+    <script src="assets/app.js"></script>
+    <script src="assets/helper.js"></script>
+    <script src="assets/algorithm.js"></script>
+</body>
+</html>
